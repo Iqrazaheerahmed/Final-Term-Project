@@ -5,6 +5,64 @@
     box-sizing:border-box;
     text-decoration: none;
 }
+/* navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 10px; 
+
+     
+}
+.left h3{
+    font-size: 2rem;
+    padding-left: 40px;
+}
+.middle ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.middle ul li {
+    list-style: none;
+    padding: 0px  30px; 
+   
+   
+}
+.middle  ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.middle ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:aliceblue
+}
+.middle  ul li a:hover::after{
+    width: 50%;
+}
+
+
+#navbar li a:hover,
+#navbar li a.active {
+    color:rgba(255, 97, 40, 0.815);
+}
+.right a{
+    font-size: 2rem;
+    color:rgba(255, 97, 40, 0.815) ;
+    margin-right: 100px;
+    text-decoration: none;
+}
 #about{
     height: 455px;
     width:100%;
