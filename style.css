@@ -934,6 +934,148 @@ h2{
     .mobile{
         display: none;
     }
+
+
+/* contact page */
+    *{
+        font-family: "Robert Slabo";
+    }
+    .header-contact{
+        width: 100%;
+        height: 100vh;
+         background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("image/about/contact-hero-bg.jpg");
+         background-position: center; 
+        background-size:cover;
+        padding: 10px ;
+        position: relative; 
+        color: #fff;
+        
+       
+    }
+    /* navbar */
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 10px; 
+    
+         
+    }
+    .left h3{
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+    .middle ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .middle ul li {
+        list-style: none;
+        padding: 0px  30px; 
+       
+       
+    }
+    .middle  ul li a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+       
+        
+        
+    }
+    .middle ul li a::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:aliceblue
+    }
+    .middle  ul li a:hover::after{
+        width: 50%;
+    }
+    
+    
+    #navbar li a:hover,
+    #navbar li a.active {
+        color:rgba(255, 97, 40, 0.815);
+    }
+    .right a{
+        font-size: 2rem;
+        color:rgba(255, 97, 40, 0.815) ;
+        margin-right: 100px;
+        text-decoration: none;
+    }
+    
+    /* header */
+    .header-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        text-align: center;
+        margin-top: 90px;
+        color: #fff;
+    }
+    .header-content h5{
+        font-weight: 500;
+        margin-bottom: 20px;
+         padding-right: 60px;  
+         text-align: center;
+         font-family: "Robert Slabo";
+            
+      }
+    .header-content h1{
+        text-align: center;
+      font-size: 58px;
+      line-height: 70px;
+      font-weight: 600;
+      max-width: 590px;
+      padding-left: 27px;
+      font-family: "Robert Slabo";
+    }
+    .header-content p{
+      font-weight: 500;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      text-align: justify;
+      font-family: "Robert Slabo";
+     
+    }
+    /* fourthcontactsection */
+ .fourthcontactsection{
+    background-color: black;
+    font-family: "Robert Slabo";
+
+ }
+ .row-contact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ 
+ .fourthcontactsection .img-col{
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 30px;
+     margin-bottom: -4px;
+    
+ }
+ .fourthcontactsection .img-col img{
+    
+    border-radius: 280px 280px 0px 0px;
+ }
+
+ .fourthcontactsection .text-col h1{
+    color: #fff;
+   
+ }
     @media  only screen and  (max-width:620px) {
     
     .header{
@@ -1170,3 +1312,23 @@ margin-left: -20px;
     }
     
 }
+@media only screen and  (max-width:768px) {
+    .header-contact{
+        height: 700px;
+        margin-right: 0px; 
+        margin-right: initial;
+    }
+    
+    .fourthcontactsection .text-col h6{
+        padding-top: 18px;
+    } 
+   .fourthcontactsection  .img-col img{
+    width: 185%;
+     padding-right: 10px; 
+     margin-left: -20px;
+   }
+   .fourthcontactsection .text-col{
+    padding-bottom: 70px;
+   }
+}
+
